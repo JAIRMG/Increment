@@ -14,7 +14,7 @@ struct LandingView: View {
                         .font(.system(size: 64, weight: .medium))
                         .foregroundColor(.white)
                     Spacer()
-                    NavigationLink(destination: Text("navigated"), isActive: $isActive) {
+                    NavigationLink(destination: CreateView(), isActive: $isActive) {
                         Button(action: {
                             isActive = true
                         }) {
