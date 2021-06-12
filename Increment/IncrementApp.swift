@@ -7,7 +7,7 @@ import SwiftUI
 struct IncrementApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
     }
 }
