@@ -22,7 +22,7 @@ struct DropdownView: View {
                 }
             }.buttonStyle(PrimaryButtonStyle(fillColor: .primaryButton))
         }
-        .padding(20)
+        .padding(15)
     }
 }
 

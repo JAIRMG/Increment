@@ -27,7 +27,7 @@ struct LandingView: View {
                             .font(.system(size: 24, weight: .semibold))
                             .foregroundColor(.white)
                         }
-                        .padding(.horizontal, 15)
+                        .padding(15)
                         .buttonStyle(PrimaryButtonStyle())
                     }
                 }.frame(
