@@ -13,6 +13,9 @@
 		A194407726751B640027EC70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407626751B640027EC70 /* Preview Assets.xcassets */; };
 		A1944081267521E30027EC70 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1944080267521E30027EC70 /* PrimaryButtonStyle.swift */; };
 		A1944084267523130027EC70 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1944083267523130027EC70 /* Color+Extension.swift */; };
+		A194408826752D0C0027EC70 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194408726752D0C0027EC70 /* CreateView.swift */; };
+		A194408B26752E160027EC70 /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194408A26752E160027EC70 /* DropdownView.swift */; };
+		A194408E267534D50027EC70 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194408D267534D50027EC70 /* RemindView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A194407826751B640027EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1944080267521E30027EC70 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		A1944083267523130027EC70 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A194408726752D0C0027EC70 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		A194408A26752E160027EC70 /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		A194408D267534D50027EC70 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				A194407526751B640027EC70 /* Preview Content */,
 				A1944080267521E30027EC70 /* PrimaryButtonStyle.swift */,
 				A1944083267523130027EC70 /* Color+Extension.swift */,
+				A194408726752D0C0027EC70 /* CreateView.swift */,
+				A194408A26752E160027EC70 /* DropdownView.swift */,
+				A194408D267534D50027EC70 /* RemindView.swift */,
 			);
 			path = Increment;
 			sourceTree = "<group>";
@@ -148,6 +157,9 @@
 				A194407226751B550027EC70 /* LandingView.swift in Sources */,
 				A194407026751B550027EC70 /* IncrementApp.swift in Sources */,
 				A1944084267523130027EC70 /* Color+Extension.swift in Sources */,
+				A194408E267534D50027EC70 /* RemindView.swift in Sources */,
+				A194408826752D0C0027EC70 /* CreateView.swift in Sources */,
+				A194408B26752E160027EC70 /* DropdownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
