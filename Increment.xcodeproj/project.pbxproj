@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A194407026751B550027EC70 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194406F26751B550027EC70 /* IncrementApp.swift */; };
-		A194407226751B550027EC70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194407126751B550027EC70 /* ContentView.swift */; };
+		A194407226751B550027EC70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194407126751B550027EC70 /* LandingView.swift */; };
 		A194407426751B640027EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407326751B640027EC70 /* Assets.xcassets */; };
 		A194407726751B640027EC70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407626751B640027EC70 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		A194406C26751B550027EC70 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194406F26751B550027EC70 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
-		A194407126751B550027EC70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A194407126751B550027EC70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		A194407326751B640027EC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A194407626751B640027EC70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A194407826751B640027EC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				A194406F26751B550027EC70 /* IncrementApp.swift */,
-				A194407126751B550027EC70 /* ContentView.swift */,
+				A194407126751B550027EC70 /* LandingView.swift */,
 				A194407326751B640027EC70 /* Assets.xcassets */,
 				A194407826751B640027EC70 /* Info.plist */,
 				A194407526751B640027EC70 /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A194407226751B550027EC70 /* ContentView.swift in Sources */,
+				A194407226751B550027EC70 /* LandingView.swift in Sources */,
 				A194407026751B550027EC70 /* IncrementApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
