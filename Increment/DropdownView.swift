@@ -7,6 +7,17 @@ struct DropdownView<T: DropdownItemProtocol>: View {
     
     @Binding var viewModel: T
     
+    var actionSheet: ActionSheet {
+        ActionSheet(
+            title: Text("Select"),
+            buttons: viewModel.options.map { option in
+                return .default(Text(option.formatted)) {
+                    viewModel.selectedOption = option
+                }
+            }
+        )
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -27,18 +38,9 @@ struct DropdownView<T: DropdownItemProtocol>: View {
                 }
             }.buttonStyle(PrimaryButtonStyle(fillColor: .primaryButton))
         }
+        .actionSheet(isPresented: $viewModel.isSelected) {
+            actionSheet
+        }
         .padding(15)
     }
 }
-
-//struct DropdownView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            DropdownView()
-//        }
-//        NavigationView {
-//            DropdownView()
-//        }
-//        .environment(\.colorScheme, .dark)
-//    }
-//}
