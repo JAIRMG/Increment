@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A1662362267C2D880006083D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1662361267C2D880006083D /* GoogleService-Info.plist */; };
+		A1662394267C3F880006083D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1662393267C3F880006083D /* UserService.swift */; };
 		A194407026751B550027EC70 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194406F26751B550027EC70 /* IncrementApp.swift */; };
 		A194407226751B550027EC70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194407126751B550027EC70 /* LandingView.swift */; };
 		A194407426751B640027EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407326751B640027EC70 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2D49DB24E6219E237592F4F0 /* Pods-Increment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.release.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.release.xcconfig"; sourceTree = "<group>"; };
 		A1662361267C2D880006083D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1662393267C3F880006083D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A194406C26751B550027EC70 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194406F26751B550027EC70 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		A194407126751B550027EC70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -60,14 +62,20 @@
 				B6EBB4FFB3FD9EE7A977F2C8 /* Pods-Increment.debug.xcconfig */,
 				2D49DB24E6219E237592F4F0 /* Pods-Increment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1662392267C3F7C0006083D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1662393267C3F880006083D /* UserService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A194406326751B550027EC70 = {
 			isa = PBXGroup;
 			children = (
-				A1662361267C2D880006083D /* GoogleService-Info.plist */,
 				A194406E26751B550027EC70 /* Increment */,
 				A194406D26751B550027EC70 /* Products */,
 				258078103DE6F4096EE248CE /* Pods */,
@@ -86,6 +94,8 @@
 		A194406E26751B550027EC70 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				A1662392267C3F7C0006083D /* Services */,
+				A1662361267C2D880006083D /* GoogleService-Info.plist */,
 				A1944094267A85D90027EC70 /* ViewModels */,
 				A194406F26751B550027EC70 /* IncrementApp.swift */,
 				A194407126751B550027EC70 /* LandingView.swift */,
@@ -246,6 +256,7 @@
 				A194409A267A86D60027EC70 /* DropdownItemProtocol.swift in Sources */,
 				A1944084267523130027EC70 /* Color+Extension.swift in Sources */,
 				A1944096267A85EA0027EC70 /* CreateChallengeViewModel.swift in Sources */,
+				A1662394267C3F880006083D /* UserService.swift in Sources */,
 				A194408E267534D50027EC70 /* RemindView.swift in Sources */,
 				A194408826752D0C0027EC70 /* CreateView.swift in Sources */,
 				A194408B26752E160027EC70 /* DropdownView.swift in Sources */,
