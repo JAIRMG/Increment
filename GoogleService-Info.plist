@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>865499454186-3adl8jtnu7g92co3lp75cngfrmj177md.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.865499454186-3adl8jtnu7g92co3lp75cngfrmj177md</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDs_rc8wXX3BoF8KDgwqHp6tqAcWwZ1Cws</string>
+	<key>GCM_SENDER_ID</key>
+	<string>865499454186</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.application.Increment</string>
+	<key>PROJECT_ID</key>
+	<string>increment-42ec5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>increment-42ec5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:865499454186:ios:638d9fa24719db4b8d5593</string>
+	<key>DATABASE_URL</key>
+	<string>https://increment-42ec5.firebaseio.com</string>
+</dict>
+</plist>
