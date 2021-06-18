@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1662362267C2D880006083D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1662361267C2D880006083D /* GoogleService-Info.plist */; };
 		A194407026751B550027EC70 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194406F26751B550027EC70 /* IncrementApp.swift */; };
 		A194407226751B550027EC70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194407126751B550027EC70 /* LandingView.swift */; };
 		A194407426751B640027EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407326751B640027EC70 /* Assets.xcassets */; };
@@ -18,9 +19,12 @@
 		A194408E267534D50027EC70 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194408D267534D50027EC70 /* RemindView.swift */; };
 		A1944096267A85EA0027EC70 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1944095267A85EA0027EC70 /* CreateChallengeViewModel.swift */; };
 		A194409A267A86D60027EC70 /* DropdownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1944099267A86D60027EC70 /* DropdownItemProtocol.swift */; };
+		A83AAA46006E58F1146FC034 /* Pods_Increment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C979936677E22E460342F188 /* Pods_Increment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D49DB24E6219E237592F4F0 /* Pods-Increment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.release.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.release.xcconfig"; sourceTree = "<group>"; };
+		A1662361267C2D880006083D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A194406C26751B550027EC70 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194406F26751B550027EC70 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		A194407126751B550027EC70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		A194408D267534D50027EC70 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		A1944095267A85EA0027EC70 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		A1944099267A86D60027EC70 /* DropdownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownItemProtocol.swift; sourceTree = "<group>"; };
+		B6EBB4FFB3FD9EE7A977F2C8 /* Pods-Increment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.debug.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.debug.xcconfig"; sourceTree = "<group>"; };
+		C979936677E22E460342F188 /* Pods_Increment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Increment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83AAA46006E58F1146FC034 /* Pods_Increment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		258078103DE6F4096EE248CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBB4FFB3FD9EE7A977F2C8 /* Pods-Increment.debug.xcconfig */,
+				2D49DB24E6219E237592F4F0 /* Pods-Increment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A194406326751B550027EC70 = {
 			isa = PBXGroup;
 			children = (
+				A1662361267C2D880006083D /* GoogleService-Info.plist */,
 				A194406E26751B550027EC70 /* Increment */,
 				A194406D26751B550027EC70 /* Products */,
+				258078103DE6F4096EE248CE /* Pods */,
+				F0C0654DCF21B74A0433C4B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +118,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		F0C0654DCF21B74A0433C4B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C979936677E22E460342F188 /* Pods_Increment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A194407B26751B640027EC70 /* Build configuration list for PBXNativeTarget "Increment" */;
 			buildPhases = (
+				653E9C1CDF9E3191B31F177C /* [CP] Check Pods Manifest.lock */,
 				A194406826751B550027EC70 /* Sources */,
 				A194406926751B550027EC70 /* Frameworks */,
 				A194406A26751B550027EC70 /* Resources */,
+				4C82ACFC37721BD655B59F63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,10 +187,53 @@
 			files = (
 				A194407726751B640027EC70 /* Preview Assets.xcassets in Resources */,
 				A194407426751B640027EC70 /* Assets.xcassets in Resources */,
+				A1662362267C2D880006083D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C82ACFC37721BD655B59F63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Increment/Pods-Increment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Increment/Pods-Increment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Increment/Pods-Increment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653E9C1CDF9E3191B31F177C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Increment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A194406826751B550027EC70 /* Sources */ = {
@@ -300,6 +373,7 @@
 		};
 		A194407C26751B640027EC70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EBB4FFB3FD9EE7A977F2C8 /* Pods-Increment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.moreno.jair.Increment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.application.Increment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,6 +396,7 @@
 		};
 		A194407D26751B640027EC70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D49DB24E6219E237592F4F0 /* Pods-Increment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.moreno.jair.Increment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.application.Increment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
