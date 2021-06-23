@@ -11,6 +11,7 @@
 		A1662394267C3F880006083D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1662393267C3F880006083D /* UserService.swift */; };
 		A166239B2682B9D80006083D /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166239A2682B9D80006083D /* Challenge.swift */; };
 		A166239F2682BA560006083D /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166239E2682BA560006083D /* ChallengeService.swift */; };
+		A16623A22682C3340006083D /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16623A12682C3340006083D /* IncrementError.swift */; };
 		A194407026751B550027EC70 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194406F26751B550027EC70 /* IncrementApp.swift */; };
 		A194407226751B550027EC70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194407126751B550027EC70 /* LandingView.swift */; };
 		A194407426751B640027EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407326751B640027EC70 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		A1662393267C3F880006083D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A166239A2682B9D80006083D /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		A166239E2682BA560006083D /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
+		A16623A12682C3340006083D /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
 		A194406C26751B550027EC70 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194406F26751B550027EC70 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		A194407126751B550027EC70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				A194408726752D0C0027EC70 /* CreateView.swift */,
 				A194408A26752E160027EC70 /* DropdownView.swift */,
 				A194408D267534D50027EC70 /* RemindView.swift */,
+				A16623A12682C3340006083D /* IncrementError.swift */,
 			);
 			path = Increment;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				A166239F2682BA560006083D /* ChallengeService.swift in Sources */,
 				A194408826752D0C0027EC70 /* CreateView.swift in Sources */,
 				A194408B26752E160027EC70 /* DropdownView.swift in Sources */,
+				A16623A22682C3340006083D /* IncrementError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
