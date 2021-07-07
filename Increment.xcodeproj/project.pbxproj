@@ -12,6 +12,7 @@
 		A166239B2682B9D80006083D /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166239A2682B9D80006083D /* Challenge.swift */; };
 		A166239F2682BA560006083D /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166239E2682BA560006083D /* ChallengeService.swift */; };
 		A16623A22682C3340006083D /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16623A12682C3340006083D /* IncrementError.swift */; };
+		A16623A82682D9320006083D /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16623A72682D9320006083D /* AuthPublisher.swift */; };
 		A194407026751B550027EC70 /* IncrementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194406F26751B550027EC70 /* IncrementApp.swift */; };
 		A194407226751B550027EC70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194407126751B550027EC70 /* LandingView.swift */; };
 		A194407426751B640027EC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A194407326751B640027EC70 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		A166239A2682B9D80006083D /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		A166239E2682BA560006083D /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		A16623A12682C3340006083D /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
+		A16623A72682D9320006083D /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		A194406C26751B550027EC70 /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194406F26751B550027EC70 /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		A194407126751B550027EC70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A16623A62682D9220006083D /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				A16623A72682D9320006083D /* AuthPublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
 		A194406326751B550027EC70 = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +119,10 @@
 		A194406E26751B550027EC70 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				A16623A62682D9220006083D /* Publishers */,
+				A1662361267C2D880006083D /* GoogleService-Info.plist */,
 				A16623992682B9CB0006083D /* Models */,
 				A1662392267C3F7C0006083D /* Services */,
-				A1662361267C2D880006083D /* GoogleService-Info.plist */,
 				A1944094267A85D90027EC70 /* ViewModels */,
 				A194406F26751B550027EC70 /* IncrementApp.swift */,
 				A194407126751B550027EC70 /* LandingView.swift */,
@@ -267,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16623A82682D9320006083D /* AuthPublisher.swift in Sources */,
 				A1944081267521E30027EC70 /* PrimaryButtonStyle.swift in Sources */,
 				A194407226751B550027EC70 /* LandingView.swift in Sources */,
 				A194407026751B550027EC70 /* IncrementApp.swift in Sources */,
