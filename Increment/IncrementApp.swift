@@ -8,10 +8,21 @@ import Firebase
 struct IncrementApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var appState = AppState()
+    
     
     var body: some Scene {
         WindowGroup {
-            LandingView()
+            if appState.isLoggedIn {
+                TabView {
+                    Text("Log")
+                        .tabItem {
+                            Image(systemName: "book")
+                        }
+                }
+            } else {
+                LandingView()
+            }
         }
     }
 }
@@ -22,4 +33,21 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         FirebaseApp.configure()
         return true
     }
+}
+
+
+class AppState: ObservableObject {
+    @Published private(set) var isLoggedIn = false
+    
+    private let userService: UserServiceProtocol
+    
+    init(userService: UserServiceProtocol = UserService()) {
+        self.userService = userService
+        userService
+            .observeAuthChanges()
+            .map { $0 != nil }
+            .assign(to: &$isLoggedIn)
+        
+    }
+    
 }
