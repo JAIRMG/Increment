@@ -48,8 +48,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "AppState"
-            landmarkType = "3">
+            landmarkName = "init(userService:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "6B644B54-1F07-4AE6-BCC2-978206889AD7 - 59478443879685f3"
