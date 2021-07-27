@@ -130,24 +130,18 @@
 		A194406E26751B550027EC70 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				A1D465B126AFA2C200EB2505 /* Error */,
+				A1D465B026AFA2A900EB2505 /* Extensions */,
+				A1D465AE26AFA28200EB2505 /* Views */,
 				A16623A62682D9220006083D /* Publishers */,
 				A1662361267C2D880006083D /* GoogleService-Info.plist */,
 				A16623992682B9CB0006083D /* Models */,
 				A1662392267C3F7C0006083D /* Services */,
 				A1944094267A85D90027EC70 /* ViewModels */,
 				A194406F26751B550027EC70 /* IncrementApp.swift */,
-				A194407126751B550027EC70 /* LandingView.swift */,
 				A194407326751B640027EC70 /* Assets.xcassets */,
 				A194407826751B640027EC70 /* Info.plist */,
 				A194407526751B640027EC70 /* Preview Content */,
-				A1944080267521E30027EC70 /* PrimaryButtonStyle.swift */,
-				A1944083267523130027EC70 /* Color+Extension.swift */,
-				A194408726752D0C0027EC70 /* CreateView.swift */,
-				A194408A26752E160027EC70 /* DropdownView.swift */,
-				A194408D267534D50027EC70 /* RemindView.swift */,
-				A16623A12682C3340006083D /* IncrementError.swift */,
-				A16842232695623F002166B0 /* TabBarContainerView.swift */,
-				A1684264269BAE99002166B0 /* ChallengeListView.swift */,
 			);
 			path = Increment;
 			sourceTree = "<group>";
@@ -169,6 +163,36 @@
 				A1684272269D274B002166B0 /* ChallengeItemViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A1D465AE26AFA28200EB2505 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1944080267521E30027EC70 /* PrimaryButtonStyle.swift */,
+				A194407126751B550027EC70 /* LandingView.swift */,
+				A194408726752D0C0027EC70 /* CreateView.swift */,
+				A194408A26752E160027EC70 /* DropdownView.swift */,
+				A194408D267534D50027EC70 /* RemindView.swift */,
+				A16842232695623F002166B0 /* TabBarContainerView.swift */,
+				A1684264269BAE99002166B0 /* ChallengeListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1D465B026AFA2A900EB2505 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1944083267523130027EC70 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1D465B126AFA2C200EB2505 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A16623A12682C3340006083D /* IncrementError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		F0C0654DCF21B74A0433C4B1 /* Frameworks */ = {
