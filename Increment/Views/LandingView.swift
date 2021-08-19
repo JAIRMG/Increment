@@ -30,7 +30,8 @@ struct LandingView: View {
                         .padding(15)
                         .buttonStyle(PrimaryButtonStyle())
                     }
-                    NavigationLink(destination: Text("ok"), isActive: $viewModel.loginSignupPushed) {
+                    NavigationLink(destination: LoginSignupView(viewModel: .init(mode: .login)),
+                                   isActive: $viewModel.loginSignupPushed) {
                         Button("I already have an account") {
                             // trigger push
                             viewModel.loginSignupPushed = true
