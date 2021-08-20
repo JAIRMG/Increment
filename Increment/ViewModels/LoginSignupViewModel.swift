@@ -11,6 +11,8 @@ final class LoginSignupViewModel: ObservableObject {
     @Published var passwordText = ""
     @Published var isValid = false
     @Binding var isPushed: Bool
+    private(set) var emailPlaceholderText = "Email"
+    private(set) var passwordPlaceholderText = "Password"
     private let userService: UserServiceProtocol
     private var cancellables: [AnyCancellable] = []
     
