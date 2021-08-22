@@ -38,6 +38,7 @@
 		A1D465CA26CE179900EB2505 /* TextFieldCustomRoundedStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D465C926CE179900EB2505 /* TextFieldCustomRoundedStyle.swift */; };
 		A1D465CF26D0B60800EB2505 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D465CE26D0B60600EB2505 /* ProgressCircleView.swift */; };
 		A1D465D226D0B66D00EB2505 /* ProgressCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D465D126D0B66D00EB2505 /* ProgressCircleViewModel.swift */; };
+		A1D465D626D1FC7900EB2505 /* ChallengeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D465D526D1FC7800EB2505 /* ChallengeItemView.swift */; };
 		A83AAA46006E58F1146FC034 /* Pods_Increment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C979936677E22E460342F188 /* Pods_Increment.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		A1D465C926CE179900EB2505 /* TextFieldCustomRoundedStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustomRoundedStyle.swift; sourceTree = "<group>"; };
 		A1D465CE26D0B60600EB2505 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		A1D465D126D0B66D00EB2505 /* ProgressCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleViewModel.swift; sourceTree = "<group>"; };
+		A1D465D526D1FC7800EB2505 /* ChallengeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeItemView.swift; sourceTree = "<group>"; };
 		B6EBB4FFB3FD9EE7A977F2C8 /* Pods-Increment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.debug.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.debug.xcconfig"; sourceTree = "<group>"; };
 		C979936677E22E460342F188 /* Pods_Increment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Increment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -202,6 +204,7 @@
 				A1D465B426AFADDE00EB2505 /* SettingsView.swift */,
 				A1D465C226CE136400EB2505 /* LoginSignupView.swift */,
 				A1D465CE26D0B60600EB2505 /* ProgressCircleView.swift */,
+				A1D465D526D1FC7800EB2505 /* ChallengeItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				A1D465C626CE13BA00EB2505 /* LoginSignupViewModel.swift in Sources */,
 				A166239B2682B9D80006083D /* Challenge.swift in Sources */,
 				A16842242695623F002166B0 /* TabBarContainerView.swift in Sources */,
+				A1D465D626D1FC7900EB2505 /* ChallengeItemView.swift in Sources */,
 				A1944084267523130027EC70 /* Color+Extension.swift in Sources */,
 				A1944096267A85EA0027EC70 /* CreateChallengeViewModel.swift in Sources */,
 				A1662394267C3F880006083D /* UserService.swift in Sources */,
