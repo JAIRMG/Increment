@@ -5,7 +5,13 @@ import SwiftUI
 
 struct LoginSignupView: View {
     
-    @ObservedObject var viewModel: LoginSignupViewModel
+    @StateObject private var viewModel: LoginSignupViewModel
+    @Binding var isPushed: Bool
+    
+    init(mode: LoginSignupViewModel.Mode, isPushed: Binding<Bool>) {
+        self._viewModel = .init(wrappedValue: .init(mode: mode))
+        self._isPushed = isPushed
+    }
     
     var emailTextField: some View {
         TextField(viewModel.emailPlaceholderText, text: $viewModel.emailText)
@@ -49,6 +55,9 @@ struct LoginSignupView: View {
             actionButton
             Spacer()
         }
+        .onReceive(viewModel.$isPushed, perform: { isPushed in
+            self.isPushed = isPushed
+        })
         .padding()
     }
 }
@@ -56,8 +65,8 @@ struct LoginSignupView: View {
 struct LoginSignupView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            LoginSignupView(viewModel: .init(mode: .login,
-                                             isPushed: .constant(false)))
+            LoginSignupView(mode: .login,
+                            isPushed: .constant(false))
         }.environment(\.colorScheme, .dark)
     }
 }
