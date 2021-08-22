@@ -23,6 +23,9 @@ struct ChallengeListView: View {
                 }
             } else {
                 mainContentView
+                    .onReceive(NotificationCenter.default.publisher(for: UIApplication.significantTimeChangeNotification), perform: { _ in
+                        viewModel.send(action: .timeChange)
+                    })
             }
         }
     }
