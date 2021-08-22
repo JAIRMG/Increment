@@ -33,7 +33,7 @@ struct ChallengeItemViewModel: Identifiable {
         return abs(daysFromStart)
     }
     
-    private var isComplete: Bool {
+    var isComplete: Bool {
         daysFromStart - challenge.length >= 0
     }
     
@@ -63,7 +63,7 @@ struct ChallengeItemViewModel: Identifiable {
         } else {
             exercise = challenge.exercise
         }
-        return "\(repNumber) " + exercise
+        return isComplete ? "Complete" : "\(repNumber) " + exercise
     }
     
     var shouldShowTodayView: Bool {

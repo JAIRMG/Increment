@@ -18,6 +18,7 @@ final class ChallengeListViewModel: ObservableObject {
     enum Action {
         case retry
         case create
+        case timeChange
     }
     
     init(userService: UserServiceProtocol = UserService(),
@@ -72,7 +73,7 @@ final class ChallengeListViewModel: ObservableObject {
                 print("finished")
             }
         } receiveValue: { _ in }
-
+        .store(in: &cancellables)
     }
     
     private func deleteChallenge(_ challengeId: String) {
@@ -93,6 +94,9 @@ final class ChallengeListViewModel: ObservableObject {
             observeChallenges()
         case .create:
             showingCreateModal = true
+        case .timeChange:
+            cancellables.removeAll()
+            observeChallenges()
         }
     }
 }

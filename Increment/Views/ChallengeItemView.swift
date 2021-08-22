@@ -38,9 +38,11 @@ struct ChallengeItemView: View {
                 .fontWeight(.medium)
             Text(viewModel.todayRepTitle)
                 .font(.system(size: 24, weight: .bold))
-            Button(viewModel.buttonCompleteText) {
+            Button(viewModel.isDayComplete || viewModel.isComplete ? "Completed" : "Mark Done") {
                 viewModel.send(action: .toggleComplete)
-            }.padding(.vertical, 10)
+            }
+            .disabled(viewModel.isComplete)
+            .padding(.vertical, 10)
             .padding(.horizontal, 15)
             .font(Font.caption.weight(.semibold))
             .background(viewModel.isDayComplete ? Color.circleTrack : Color.primaryButton)
@@ -57,9 +59,7 @@ struct ChallengeItemView: View {
                     viewModel: viewModel.progressCircleViewModel
                 )
                 dailyIncreaseRow
-                if viewModel.shouldShowTodayView {
-                    todayView
-                }
+                todayView
             }.padding(.vertical, 10)
             Spacer()
         }
